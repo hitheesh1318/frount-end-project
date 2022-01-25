@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.b{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.a{
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(#222224 10%,#f0f0f0 10%);
+    position: relative;
+    border-radius: 0 0 300px 300px;
+    transform: translate(0px,-40px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}.c{
+    width: 600px;
+    height: 300px;
+    background: linear-gradient(#f00000 90%,#222224 10%);
+    position: relative;
+    border-radius: 300px 300px 0 0;
+    transform: translate(0,-300px);
+}
+.e{
+    width: 80px;
+    height: 80px;
+    background: #f0f0f0;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 
+    0 0 0 30px #222224;
+    transform: translate(250px,250px);
+}
+.c:hover{
+    transform: translate(0,-450px);
+    transition: 5s;
+}
+.f{
+    width: 600px;
+    height: 100px;
+    background: transparent;
+    position: relative;
+    transform: translate(450px,375px);
+}
+/*f*/
+.g{
+    transform: translate(25px,25px);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+/*d*/
+.h{
+    color: #f0f0f0;
+    transform: translate(320px,-47px);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+/*s*/
+h1{
+    color: #f0f0f0;
+    transform: translate(150px,-10px);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.g span,.h span,h1 span{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right,#fff020,#fd004c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    animation: animate 1.5s linear infinite;
+}
+.h span{
+    background: linear-gradient(to right,#2196f3,#ff00eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 span{
+    background: linear-gradient(to right,#3edf4b,#2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.1s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(5){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(6){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(7){
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(8){
+    animation-delay: 0.7s;
+}
+h1 span:nth-child(9){
+    animation-delay: 0.8s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-30px);
+    }
+    15%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

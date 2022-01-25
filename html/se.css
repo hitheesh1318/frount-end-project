@@ -1,0 +1,89 @@
+*{
+    padding:0;
+    margin:0;
+}
+.m{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(gif.gif);
+    background-size: cover;
+    background-position: center;
+}
+.i1{
+    height: 600px;
+    width: 500px;
+    transform: translate(90px,70px);
+}
+h2{
+    position: absolute;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+   /* -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);*/
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+.t{
+    transform: translate(0px,100px);
+}
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: white;
+        text-shadow: none;
+    }    
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: white;
+        text-shadow: 
+        0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+.tx{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background: linear-gradient(to right,#fff020,#fd004c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translate(1200px,0px);
+    border-radius: 20px;
+    color: black
+}
+.tx1{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3ew.gif);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transform: translate(1200px,-130px);
+}
+p{
+    transform: translate(-10px,-50px);
+    background: linear-gradient(to right,cyan,violet,royalblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tx1:hover{
+    transform: translate(1000px,-130px);
+    transition: 5s;
+}
